@@ -1,0 +1,17 @@
+{
+	"manifest_version": 2,
+	"name": "Julianr",
+	"version": "0.1",
+	"description": "Chamando os políticos pelos seus próprios nomes.",
+	"icons": { "16": "images/julianr16.png",
+           "48": "images/julianr48.png",
+          "128": "images/julianr128.png" },
+	"content_scripts": 
+	[
+		{
+			"matches": ["*://*/*"], 
+			"js": ["myscript.js"],
+			"run_at": "document_end"  
+		}
+	]
+}
